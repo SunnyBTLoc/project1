@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,500&display=swap');
+*{
+	margin: 0em;
+	padding: 0em;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+     font-family: 'Roboto', sans-serif;
+}
+:root{
+    --text-color:#3cb878;
+    --text-hover:#ec7033;
+    --color:#333333;
+}
+/*header start*/
+header {
+	width: 100%;
+	height: 6.25em;
+}
+.header__container{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 6.25em;
+}
+.header__container .logo{
+	width: 30%;
+}
+.header__container .logo a{
+    color: var(--text-color);
+    font-size: 1.8em;
+}
+.header__container .logo a:hover{
+    color: var(--text-hover);
+    opacity: 0.7;
+}
+.header__container .menu{
+    width: 55%;
+}
+.header__container .menu ul li a{
+	font-size: 1.2em;
+	color: var(--color);
+}
+.header__container .menu ul li {
+	display: inline-block;
+	margin-right: 1.5em;
+}
+.header__container .menu ul li .active{
+    color: var(--text-color);
+}
+.header__container .menu ul li a:hover{
+    color: var(--text-hover);
+    opacity: 0.7;
+}
+.header__container .icon{
+    width: 20%;
+    cursor: pointer;
+}
+.header__container .icon img{
+    margin-right: 1.25em;
+}
+.header__container .circle {
+	position: relative;
+}
+.header__container span{
+	position: absolute;
+	top: 1.8em;
+	right: 11.2em;
+	width: 1.25em;
+	height: 1.25em;
+	line-height: 1.25em;
+	border-radius: 50%;
+	background: var(--text-color);
+	text-align: center;
+	color: #fff;	
+}
+/*header end*/
+/*slider start*/
+slider{
+    width: 100%;
+    height: 35em;
+}
+slider .slider__container{
+	position: relative;
+	width: 100%;
+	height: 35em;
+	background: blue;
+}
+slider .slider__container .item img{
+	width: 100%;
+	height: 35em;
+	position: relative;
+}
+slider .slider__container h2{
+	position: absolute;
+	top:43%;
+	left: 18%;
+	line-height: 1.4em;
+	letter-spacing: 0.25em;
+}
+.slider__container span,
+.slider__container small{
+	display: block;
+	font-size: ;
+}
+.slider__container small{
+	color: var(--text-color);
+}
+/*slider end*/
+/*seller and product start*/
+seller, product{
+    width: 100%;
+    display: block;
+    margin: 2em 0em;
+}
+seller .seller__container ul,
+product .product__container ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+seller ul li,
+product ul li{
+	width: 19%;
+	min-height: 12.5em;
+	margin:2em 0em 0em 0.8em;
+	position: relative;
+}
+seller ul li .p1,
+product ul li .p1{
+	width: 100%;
+}
+seller ul li .action,
+product ul li .action{
+	position: absolute;
+	top: 1em;
+	right: 0.8em; 
+	display: flex;
+	flex-direction: column;
+}
+seller ul li .action img,
+product ul li .action img
+{
+	width: 1.3em;
+}
+seller ul li .action p,
+product ul li .action p
+{
+	width: 1.6em;
+	height: 1.6em;
+	line-height: 1.6em;
+	text-align: center;
+	background: var(--text-color);
+	margin-top: 10px;
+	display: none;
+}
+seller ul li:hover .action p,
+product ul li:hover .action p{
+	display: block;
+}
+seller ul li h3
+,product ul li h3{
+	margin-top: 1em;
+}
+seller ul li h3 a,
+product ul li h3 a{
+   color: var(--color);
+}
+seller ul li p.money,
+product ul li p.money
+{
+	margin-top: 1em;
+	color: var(--text-color);
+}
+seller ul li div h3{
+	font-size: 1.6em;
+	letter-spacing: 0.2em;
+}
+seller ul li div small{
+	color: var(--text-color);
+	font-style: italic;
+}
+seller ul li div p.text{
+	margin-top: 1em;
+}
+/*seller and product end*/
+/*section start*/
+section{
+	width: 100%;
+	height: 10em;
+	margin-top: 4em;
+	background:#f5f6f9;
+}
+section .container{
+	width: 100%;
+	height: 10em;
+}
+section .container ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10em;
+}
+section .container ul li{
+	text-align: center;
+}
+section .container ul li h3{
+	margin-top: 1em;
+	letter-spacing: 0.2em;	
+}
+section .container ul li small{
+	color: #979797;
+}
+/*section end*/
+/*summer start*/
+summer{
+	width: 100%;
+}
+.summer__container ul{
+	display: flex;
+}
+.summer__container ul li{
+	width: 100%;
+}
+.summer__container ul li img{
+	width: 60%;
+	margin: 4.375em 6.25em;
+}
+.summer__container .newfashion,
+.summer__container .summer{
+	background: #2e3348;
+}
+.summer__container .fashion{
+    background: #34394f;
+}
+/*summer end*/
+/*next product*/
+product .product__container .featured{
+	margin: 4em 0em 2em 0em;
+	text-align: center;
+}
+product .product__container .featured h2{
+	font-size: 2em;
+	letter-spacing: 0.125em;
+}
+product .product__container .featured small{
+	color: var(--text-color);
+	font-size: 1em;
+}
+/* product end*/
+/*discount start*/
+discount{
+	width: 100%;
+}
+discount .discount__container{
+	width: 100%;
+	display: flex;
+}
+discount .discount__container .Special{
+	max-width: 50%;
+	height: 15.5em;
+	position: relative;
+}
+discount .discount__container .Special img{
+	width: 100%;
+	height: 15.5em;
+}
+discount .discount__container .Special .action{
+	position: absolute;
+	top: 3em;
+	left: 7.4em;
+	line-height: 1.5;
+	color: #fff;
+	text-align: center;
+}
+discount .discount__container .Special .action a{
+	color: #fff;	
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+}
+discount .discount__container .Special .action small{
+	font-size: 1em;
+}
+discount .discount__container .Special .action input{
+	margin-top: 1.2em;
+	width: 20em;
+	height: 2em;
+	outline: none;
+	border: none;
+	border-radius: 0.3em;
+	padding-left: 1em;
+}
+discount .discount__container .Special .action button{
+	width: 12em;
+	height: 2em;
+	background: var(--text-color);
+	color: #fff;
+	border: none;
+	border-radius: 0.3em;
+}
+.discount__container .Special .action button:hover{
+   background: var(--text-hover);
+   cursor: pointer;
+}
+discount .discount__container .logo{
+	width: 50%;
+	height: 15.5em;
+	background: #f5f6f9;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+discount .discount__container .logo img{
+	width: 80%;
+	height: 50%;
+}
+/*discount end*/
+/*footer start*/
+footer{
+	width: 100%;
+	height: 3em;
+}
+footer .footer__container{
+	width: 100%;
+	height: 3em;
+	background: #000;
+	display: flex;
+	align-items: center;
+}
+footer .footer__container p{
+	width: 50%;
+	color: #fff;
+	text-align: center;
+}
+footer .footer__container ul{
+	width: 50%;
+	text-align: center;
+}
+/*footer end*/
